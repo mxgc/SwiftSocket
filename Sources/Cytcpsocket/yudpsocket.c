@@ -28,15 +28,8 @@
 //  SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 //
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <sys/socket.h>
-#include <arpa/inet.h>
-#include <sys/types.h>
-#include <string.h>
-#include <unistd.h>
-#include <netdb.h>
-#define yudpsocket_buff_len 8192
+
+#include "include/yudpsocket.h"
 
 //return socket fd
 int yudpsocket_server(const char *address, int port) {
